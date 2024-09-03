@@ -35,8 +35,8 @@ final class SmokeTest extends WebTestCase
         $client->request('POST', '/api/login', [], [], [
             'CONTENT_TYPE' => 'application/json',
         ], json_encode([
-            'username' => 'pierre.dupont@studi.exemple',
-            'password' => 'pierre2023',
+            'username' => 'essai@mail.com',
+            'password' => 'Madinalake_3',
         ], JSON_THROW_ON_ERROR));
 
         $statusCode = $client->getResponse()->getStatusCode();
